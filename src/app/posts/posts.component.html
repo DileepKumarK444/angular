@@ -1,0 +1,35 @@
+
+<input type="button" value="Create"  class="btn btn-primary">
+<br/>
+<br/>
+<div class="row">
+    <div class="col">
+        <div class="col-sm-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Slug</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let d of data">
+                        <td>{{d.title}}</td>
+                        <td>{{d.slug}}</td>
+                        <td>
+                            <div class="d-flex justify-content-center" style="gap:10px">
+
+                                <button style="border: none;" ><i class="bi bi-pencil-fill"></i></button>
+                                <button style="border: none;"  ><i class="bi bi-trash-fill"></i></button>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+        </div>
+        </div>
+        </div>
